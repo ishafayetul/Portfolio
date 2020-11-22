@@ -34,7 +34,7 @@ submit.addEventListener('click', e => {
           }).then(x => {
             document.getElementById('reg-form-id').reset();
             firebase.auth().signOut().then(x => {
-              //document.location.href = "./login.html?Signup=Successful";
+              document.location.href = "./login.html?Signup=Successful";
             });
           });
 
